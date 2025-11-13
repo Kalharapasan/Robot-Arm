@@ -20,15 +20,14 @@ const int JOY_Y = A0;
 const int JOY_BTN = 2;
 
 const int DEADZONE = 50;        
-const int MOVE_SPEED = 2;       
-const int UPDATE_DELAY = 20;   
+const int MOVE_SPEED = 1;       
+const int UPDATE_DELAY = 30;   
 const int MIN_ANGLE = 0;       
 const int MAX_ANGLE = 180;     
 
 bool joyBtnLastState = HIGH;  
 
 void setup() {
-  Serial.begin(9600);
   baseServo.attach(BASE_SERVO_PIN);
   armServo.attach(ARM_SERVO_PIN);
   pinMode(JOY_BTN, INPUT_PULLUP);
@@ -94,12 +93,12 @@ void smoothMove(Servo &servo, int currentPos, int targetPos) {
   if (currentPos < targetPos) {
     for (int pos = currentPos; pos <= targetPos; pos++) {
       servo.write(pos);
-      delay(15);
+      delay(20);
     }
   } else {
     for (int pos = currentPos; pos >= targetPos; pos--) {
       servo.write(pos);
-      delay(15);
+      delay(20);
     }
   }
 }
