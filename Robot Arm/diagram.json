@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "author": "Pasan Kalhara",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-breadboard-half",
+      "id": "bb1",
+      "top": -3,
+      "left": -611.6,
+      "attrs": { "color": "#eeefed" }
+    },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 39, "left": -163.8, "attrs": {} },
+    { "type": "wokwi-analog-joystick", "id": "joystick1", "top": 345, "left": -369, "attrs": {} },
+    {
+      "type": "wokwi-analog-joystick",
+      "id": "joystick2",
+      "top": 325.8,
+      "left": 178.2,
+      "attrs": {}
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": -165.2, "left": -259.2, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo2", "top": -203.6, "left": 105.6, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo3", "top": -203.6, "left": 403.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "bb1:bp.1", "bb1:tn.1", "red", [ "v-0.9", "h-56", "v-134.4" ] ],
+    [ "bb1:bn.1", "bb1:tp.1", "black", [ "v-1.3", "h-65.6", "v-182.4" ] ],
+    [ "uno:GND.2", "bb1:bn.25", "black", [ "v38.3", "h-284.1", "v-115.2" ] ],
+    [ "uno:5V", "bb1:bp.25", "red", [ "v9.5", "h-245.8", "v-86.4" ] ],
+    [ "servo2:GND", "bb1:tp.2", "black", [ "h-9.6", "v-67.2", "h-499.2", "v96", "h-96" ] ],
+    [ "servo1:GND", "bb1:tp.3", "black", [ "h-105.6", "v28.8", "h-86.4", "v0", "h-67.2" ] ],
+    [ "servo2:V+", "bb1:tn.4", "green", [ "h-28.8", "v-47.9", "h-470.4", "v76.8", "h-105.6" ] ],
+    [ "servo1:V+", "bb1:tn.5", "green", [ "h-86.4", "v38.5", "h-153.6" ] ],
+    [ "servo1:PWM", "uno:11", "green", [ "h-48", "v96.2", "h259.2" ] ],
+    [ "uno:10", "servo2:PWM", "green", [ "v-124.8", "h0.7", "v-86.4" ] ],
+    [ "joystick1:VCC", "bb1:bp.20", "red", [ "v9.6", "h-9.6", "v-326.4" ] ],
+    [ "joystick1:GND", "bb1:bn.22", "black", [ "v9.6", "h48", "v-144", "h-67.2" ] ],
+    [ "joystick2:VCC", "bb1:bp.10", "red", [ "v76.8", "h-672", "v-374.4" ] ],
+    [ "joystick2:GND", "bb1:bn.6", "black", [ "v86.4", "h-720" ] ],
+    [ "joystick1:HORZ", "uno:A0", "green", [ "v19.2", "h240" ] ],
+    [ "joystick1:VERT", "uno:A1", "green", [ "v28.8", "h384" ] ],
+    [ "joystick2:VERT", "uno:A2", "green", [ "v38.4", "h124.8", "v-182.4", "h-182.4" ] ],
+    [ "joystick2:HORZ", "uno:A3", "green", [ "v9.6", "h86.4", "v-134.4", "h-230.4" ] ],
+    [ "servo3:PWM", "uno:6", "green", [ "h-115.2", "v144.2", "h-240" ] ],
+    [ "servo3:GND", "bb1:tp.12", "black", [ "h-19.2", "v-96", "h-835.2", "v-9.6" ] ],
+    [ "servo3:V+", "bb1:tn.13", "green", [ "h-57.6", "v-86.3", "h-777.6" ] ]
+  ],
+  "dependencies": {}
+}
