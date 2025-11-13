@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <Servo.h>
+
 void controlServo(Servo &servo, int &currentPos, int joyValue, int joyCenter, String servoName);
 void handleButtons(bool joyBtn);
 void resetRobotArm();
@@ -66,12 +67,6 @@ void controlServo(Servo &servo, int &currentPos, int joyValue, int joyCenter, St
     if (newPos != currentPos) {
       currentPos = newPos;
       servo.write(currentPos);
-      
-      // Optional: Print position updates
-      // Serial.print(servoName);
-      // Serial.print(" Joint: ");
-      // Serial.print(currentPos);
-      // Serial.println("°");
     }
   }
 }
