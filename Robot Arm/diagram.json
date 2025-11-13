@@ -34,7 +34,6 @@
     [ "servo1:V+", "bb1:tn.5", "green", [ "h-86.4", "v38.5", "h-153.6" ] ],
     [ "servo1:PWM", "uno:11", "green", [ "h-48", "v96.2", "h259.2" ] ],
     [ "uno:10", "servo2:PWM", "green", [ "v-124.8", "h0.7", "v-86.4" ] ],
-    [ "joystick1:VCC", "bb1:bp.20", "red", [ "v9.6", "h-9.6", "v-326.4" ] ],
     [ "joystick1:GND", "bb1:bn.22", "black", [ "v9.6", "h48", "v-144", "h-67.2" ] ],
     [ "joystick2:VCC", "bb1:bp.10", "red", [ "v76.8", "h-672", "v-374.4" ] ],
     [ "joystick2:GND", "bb1:bn.6", "black", [ "v86.4", "h-720" ] ],
@@ -45,8 +44,7 @@
     [ "servo3:PWM", "uno:6", "green", [ "h-115.2", "v144.2", "h-240" ] ],
     [ "servo3:GND", "bb1:tp.12", "black", [ "h-19.2", "v-96", "h-835.2", "v-9.6" ] ],
     [ "servo3:V+", "bb1:tn.13", "green", [ "h-57.6", "v-86.3", "h-777.6" ] ],
-    [ "joystick1:SEL", "uno:2", "green", [ "v76.8", "h672", "v-576", "h-278.4" ] ],
-    [ "joystick2:SEL", "uno:3", "green", [ "v76.8", "h249.6", "v-576", "h-432" ] ]
+    [ "joystick1:VCC", "bb1:bp.15", "red", [ "v19.2", "h-76.8", "v-297.6" ] ]
   ],
   "dependencies": {}
 }
