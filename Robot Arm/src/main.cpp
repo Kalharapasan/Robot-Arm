@@ -72,6 +72,11 @@ bool joy2BtnPressed = false;
 bool joy1BtnLastState = HIGH;
 bool joy2BtnLastState = HIGH;
 
+// Forward declarations (required in .cpp to avoid 'not declared in this scope' errors)
+void calibrateJoysticks();
+void resetToHome();
+void printPositions();
+
 void setup() {
   // Initialize serial communication
   Serial.begin(9600);
@@ -116,7 +121,6 @@ void loop() {
   // Read joystick values
   int joy1X = analogRead(JOY1_X);
   int joy1Y = analogRead(JOY1_Y);
-  int joy2X = analogRead(JOY2_X);
   int joy2Y = analogRead(JOY2_Y);
   
   // Read button states
