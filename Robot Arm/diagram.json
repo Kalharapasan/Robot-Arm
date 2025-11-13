@@ -44,7 +44,9 @@
     [ "joystick2:HORZ", "uno:A3", "green", [ "v9.6", "h86.4", "v-134.4", "h-230.4" ] ],
     [ "servo3:PWM", "uno:6", "green", [ "h-115.2", "v144.2", "h-240" ] ],
     [ "servo3:GND", "bb1:tp.12", "black", [ "h-19.2", "v-96", "h-835.2", "v-9.6" ] ],
-    [ "servo3:V+", "bb1:tn.13", "green", [ "h-57.6", "v-86.3", "h-777.6" ] ]
+    [ "servo3:V+", "bb1:tn.13", "green", [ "h-57.6", "v-86.3", "h-777.6" ] ],
+    [ "joystick1:SEL", "uno:2", "green", [ "v76.8", "h672", "v-576", "h-278.4" ] ],
+    [ "joystick2:SEL", "uno:3", "green", [ "v76.8", "h249.6", "v-576", "h-432" ] ]
   ],
   "dependencies": {}
 }
